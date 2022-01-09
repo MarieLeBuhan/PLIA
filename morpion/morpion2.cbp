@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="morpion2" />
+		<Option platforms="Windows;Unix;" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Win-i686">
+				<Option platforms="Windows;" />
+				<Option output="bin/Win-i686/morpion2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Win-i686/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="../i686-w64-mingw32/include/" />
+					<Add directory="../i686-w64-mingw32/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add library="libmingw32.a" />
+					<Add library="../i686-w64-mingw32/lib/libSDL2_gfx.a" />
+					<Add library="../i686-w64-mingw32/lib/libSDL2_ttf.dll.a" />
+					<Add library="../i686-w64-mingw32/lib/libSDL2_ttf.a" />
+					<Add library="../i686-w64-mingw32/lib/libSDL2main.a" />
+					<Add library="../i686-w64-mingw32/lib/libSDL2.dll.a" />
+					<Add directory="i686-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Win-w64">
+				<Option platforms="Windows;" />
+				<Option output="bin/Win-w64/tp8-exo1" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Win-w64/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add directory="../x86_64-w64-mingw32/include/" />
+					<Add directory="../x86_64-w64-mingw32/include/SDL2" />
+				</Compiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="libmingw32.a" />
+					<Add library="../x86_64-w64-mingw32/lib/libSDL_gfx.a" />
+					<Add library="../x86_64-w64-mingw32/lib/libSDL2_ttf.dll.a" />
+					<Add library="../x86_64-w64-mingw32/lib/libSDL2_ttf.a" />
+					<Add library="../x86_64-w64-mingw32/lib/libSDL2main.a" />
+					<Add library="../x86_64-w64-mingw32/lib/libSDL2.dll.a" />
+					<Add directory="x86_64-w64-mingw32/lib" />
+				</Linker>
+			</Target>
+			<Target title="Linux">
+				<Option platforms="Unix;" />
+				<Option output="bin/Linux/morpion2" prefix_auto="1" extension_auto="1" />
+				<Option object_output="objs/Linux" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="1" />
+				<Compiler>
+					<Add option="-DLINUX_TARGET" />
+				</Compiler>
+				<Linker>
+					<Add library="SDL2" />
+					<Add library="SDL2_ttf" />
+					<Add library="SDL2_gfx" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="AIplayer.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="graphics.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="graphics.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="morpion2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="morpion2.h" />
+		<Extensions>
+			<lib_finder disable_auto="1" />
+			<code_completion />
+			<envvars />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

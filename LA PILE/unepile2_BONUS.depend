@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1637423771 source:c:\users\marie\onedrive\documents\l3 info\s5\programmation logique et intelligence artificielle (plia)\tp\mini-projet\tp6_unepile2_mlb\unepile2\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+

@@ -1,0 +1,9 @@
+8 8 5 1
+NBBN.N.B
+N......N
+B..N.s..
+B.Ns.BBB
+B....B.N
+NNBB.s.N
+....NN.B
+N..N.B.B
